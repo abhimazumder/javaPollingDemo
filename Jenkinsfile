@@ -4,7 +4,7 @@ pipeline{
     stage('Setup'){
       steps{
         echo 'Removing previous repo...'
-        sh 'rm -rf javaPollingDemo'
+        sh 'sudo rm -rf javaPollingDemo'
         echo 'Cloning repo...'
         sh 'sudo git clone https://github.com/abhimazumder/javaPollingDemo.git'
         sh 'cd javaPollingDemo'
